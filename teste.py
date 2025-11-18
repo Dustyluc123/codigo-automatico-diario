@@ -1,1 +1,0 @@
-print("Olá GitHub! Este arquivo foi criado pelo n8n")
