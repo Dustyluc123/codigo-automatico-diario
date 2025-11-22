@@ -1,3 +1,0 @@
-
-[DOC] - Tarefa Concluída:- [X] Criar a estrutura básica do arquivo HTML principal (`index.html`). Este arquivo servirá como a página inicial do e-commerce. Inclua a estrutura padrão com `<!DOCTYPE html>`, `<html>`, `<head>` e `<body>`. No `<head>`, defina o título da página como 'Minha Loja Online'. No `<body>`, adicione um cabeçalho `<h1>` com o texto 'Bem-vindo à nossa loja!' como um placeholder inicial.
-- [ ] Adicionar o cabeçalho (header) e a navegação básica (`<nav>`) à página principal.
