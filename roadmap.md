@@ -1,0 +1,3 @@
+
+[DOC] - Tarefa Concluída:- [CONCLUÍDA] Adicionar uma seção principal (hero section) ao `index.html`, logo abaixo do cabeçalho. Esta seção deve conter um título principal (h1), um parágrafo de subtítulo e um botão (button) com uma chamada para ação (ex: 'Ver Produtos').
+- PRÓXIMA TAREFA: Adicionar um menu de navegação responsivo ao cabeçalho (header) do `index.html` com links para 'Início', 'Serviços', 'Sobre' e 'Contato'.
