@@ -1,4 +1,0 @@
-
-[DOC] - Tarefa Concluída:Roadmap:
-- [CONCLUÍDA] No arquivo CSS principal, defina a tipografia base. Estabeleça estilos para os cabeçalhos (h1-h6) e parágrafos (p), incluindo font-family, tamanhos e espaçamentos. Crie uma classe utilitária `.container` para centralizar o conteúdo principal com uma largura máxima e margens automáticas. Adicione estilos básicos para as tags `header` e `footer`, definindo um padding e uma cor de fundo para delinear visualmente essas seções da página.
-- [PENDENTE] No arquivo CSS principal, defina uma paleta de cores primárias e secundárias usando variáveis CSS. Crie estilos básicos para botões, incluindo `background-color`, `color`, `padding`, `border-radius` e um efeito `:hover`.
