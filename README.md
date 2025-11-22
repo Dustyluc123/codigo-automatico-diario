@@ -1,1 +1,0 @@
-# codigo-automatico-diario
