@@ -1,0 +1,3 @@
+
+[DOC] - Tarefa Concluída:- [x] Criar o arquivo `index.html`. Adicionar a estrutura HTML básica (doctype, html, head, body). No `<head>`, incluir um `<title>` para a página e um `<link>` para conectar a folha de estilos `style.css`. No `<body>`, criar a estrutura de navegação com as tags `<nav>`, `<ul>`, `<li>` e `<a>` para os links do menu.
+- [ ] Criar o arquivo `style.css`. Adicionar estilos básicos para o body, nav e links para verificar a conexão.
