@@ -1,0 +1,4 @@
+
+[DOC] - Tarefa Concluída:- Criar a estrutura básica do `index.html` com as tags semânticas principais.
+- Crie o arquivo `style.css`. Adicione um reset básico de CSS (ex: `* { margin: 0; padding: 0; box-sizing: border-box; }`). Em seguida, defina estilos iniciais para as tags semânticas principais (`header`, `nav`, `main`, `footer`) com cores de fundo distintas e padding, para que a estrutura definida no `index.html` se torne visualmente clara. - **CONCLUÍDA**
+- **PRÓXIMA TAREFA:** Adicione estilos básicos para a tipografia (font-family, font-size, line-height) no `body` e implemente os links de navegação dentro da tag `nav`, estilizando-os para remover o sublinhado, definir uma cor de texto e adicionar espaçamento.
