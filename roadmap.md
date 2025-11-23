@@ -1,0 +1,3 @@
+
+[DOC] - Tarefa Concluída:- [X] Modifique o arquivo `main.tsx` para importar o componente `App` de `./app.tsx`. Utilize `ReactDOM.createRoot` para encontrar o elemento com id 'root' no DOM e renderize o componente `App` dentro dele. Envolva o componente `App` com `React.StrictMode` para habilitar verificações e avisos úteis durante o desenvolvimento.
+- [ ] Crie o arquivo `app.tsx` para definir o componente principal `App`, que deve retornar um título 'Hello, React!' e um parágrafo de boas-vindas.
