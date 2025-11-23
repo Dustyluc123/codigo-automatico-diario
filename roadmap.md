@@ -1,2 +1,0 @@
-
-[DOC] - Tarefa Concluída:
