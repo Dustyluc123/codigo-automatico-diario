@@ -1,3 +1,0 @@
-
-[DOC] - Tarefa Concluída:- [X] No arquivo `index.html`, crie a estrutura básica do cabeçalho. Adicione uma tag `<header>` e, dentro dela, uma tag `<nav>`. A navegação deve conter uma lista não ordenada (`<ul>`) com itens de lista (`<li>`) para os links: 'Home', 'Produtos', 'Sobre' e 'Contato'.
-- [ ] No arquivo `index.html`, crie a seção principal. Adicione uma tag `<main>` logo abaixo do `<header>` e inclua um `<h1>` com o título "Bem-vindo à Nossa Aplicação" e um parágrafo de texto descritivo.
