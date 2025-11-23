@@ -1,0 +1,3 @@
+
+[DOC] - Tarefa Concluída:*   **[CONCLUÍDA]** Adicionar a estrutura semântica básica ao `index.html`, incluindo as tags `<header>`, `<main>` e `<footer>`. Dentro da tag `<main>`, crie uma seção com a classe `product-list` e adicione pelo menos dois elementos `div` com a classe `product-card` como exemplos para visualizar os estilos já aplicados.
+*   **[PRÓXIMA TAREFA]** Criar um arquivo `style.css` separado e transferir todos os estilos CSS do `<head>` do `index.html` para ele, vinculando o `style.css` corretamente ao `index.html`.
