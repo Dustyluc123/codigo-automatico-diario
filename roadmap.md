@@ -1,3 +1,0 @@
-
-[DOC] - Tarefa Concluída:- [x] Crie o arquivo `index.html`. Adicione a estrutura HTML5 básica (doctype, head, body). No `<head>`, inclua o link para o `style.css` já criado. No `<body>`, estruture as seções principais: um cabeçalho (`<header>`), uma área principal (`<main>`) para a grade de produtos, e um rodapé (`<footer>`). Dentro do `<main>`, crie um container para a grade de produtos (ex: `<div class="product-grid">`).
-- [ ] Crie o arquivo `style.css`. Adicione estilos CSS básicos para reset, tipografia e layout inicial para o cabeçalho, rodapé e container da grade de produtos (`.product-grid`).
