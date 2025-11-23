@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu E-Commerce</title>
+    <!-- Link para o futuro arquivo CSS principal do aplicativo -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos para o header e o contador de carrinho */
+        header {
+            display: flex;
+            justify-content: space-between; /* Alinha o título e o contador nas extremidades */
+            align-items: center; /* Centraliza verticalmente os itens */
+            padding: 15px 25px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0; /* Remove margem padrão do h1 */
+            font-size: 1.8em;
+            color: #333;
+        }
+        /* Estilos para o novo link do ícone do carrinho */
+        .cart-icon-link {
+            display: flex;
+            align-items: center; /* Alinha verticalmente o ícone e o contador */
+            text-decoration: none; /* Remove sublinhado padrão do link */
+            color: #333; /* Cor do ícone */
+            font-size: 1.5em; /* Tamanho do ícone */
+            gap: 8px; /* Espaço entre o ícone e o contador */
+            padding: 8px 12px; /* Adiciona um pouco de padding para a área de clique */
+            border-radius: 25px; /* Bordas arredondadas para o link */
+            transition: background-color 0.2s ease-in-out;
+        }
+        .cart-icon-link:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        /* Estilos para o contador de carrinho */
+        #cart-counter {
+            background-color: #007bff; /* Cor de fundo para o contador */
+            color: white;
+            padding: 6px 10px; /* Ajuste de padding para caber melhor no link */
+            border-radius: 20px; /* Bordas arredondadas para um visual de 'badge' */
+            font-weight: bold;
+            font-size: 0.8em; /* Ajuste de tamanho para o badge */
+            min-width: 25px; /* Garante um tamanho mínimo para o badge */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+        }
+        /* Adicionalmente, você pode querer reintroduzir a navegação mais tarde */
+        /* .header-nav {
+            display: flex;
+            align-items: center;
+        } */
+
+        /* Estilos básicos para o contêiner do carrinho (pode ser movido para style.css) */
+        #cart-display {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 350px;
+            height: 100%;
+            background-color: #f9f9f9;
+            border-left: 1px solid #e0e0e0;
+            box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+            overflow-y: auto;
+            display: none; /* Mantido para o controle JavaScript */
+            flex-direction: column;
+        }
+
+        #cart-display h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        #cart-items-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            flex-grow: 1;
+        }
+
+        #cart-items-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px dotted #eee;
+        }
+
+        #cart-total {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        #close-cart-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        #close-cart-btn:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <!-- O conteúdo principal do aplicativo E-Commerce será renderizado aqui -->
+    <header>
+        <!-- O h1 e o contador estão agora diretamente no header para facilitar o flexbox -->
+        <h1>Meu E-Commerce</h1>
+        <a href="#" class="cart-icon-link" aria-label="Abrir carrinho de compras">
+            🛒 <div id="cart-counter">0</div>
+        </a>
+        <!-- A navegação pode ser adicionada aqui posteriormente, talvez dentro de um novo elemento -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main id="app-root">
+        <!-- Componentes e rotas do aplicativo serão carregados e montados aqui pelo JavaScript -->
+        <p>Carregando E-Commerce...</p>
+    </main>
+
+    <!-- Contêiner principal para a exibição detalhada do carrinho -->
+    <div id='cart-display' style='display: none;'>
+        <h2>Seu Carrinho</h2>
+        <ul id='cart-items-list'>
+            <!-- Os itens do carrinho serão renderizados aqui via JavaScript -->
+        </ul>
+        <p id='cart-total'>Total: R$ 0.00</p>
+        <button id='close-cart-btn'>Fechar Carrinho</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Meu E-Commerce. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o futuro arquivo JavaScript principal do aplicativo -->
+    <!-- O atributo 'defer' garante que o script seja executado após a análise completa do HTML -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
+
+
+<!-- ROADMAP UPDATE -->
+<!-- TAREFA CONCLUÍDA: Criar index.html com estrutura básica e links para CSS/JS. -->
+<!-- TAREFA CONCLUÍDA: Adicionar elemento 'cart-counter' e estilizar o header para conter o título e o contador. -->
+<!-- TAREFA CONCLUÍDA: Modificar o header para envolver o cart-counter em um link clicável com ícone de carrinho para melhor interação. -->
+<!-- TAREFA CONCLUÍDA: Adicionar um novo elemento HTML (`<div id='cart-display'>`) ao `index.html` que servirá como o contêiner principal para a exibição detalhada do carrinho de compras. -->
+<!-- PRÓXIMA TAREFA: Configurar o ambiente de desenvolvimento (ex: Webpack/Vite) para transpilação e empacotamento do JavaScript e CSS. -->
