@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">E-commerce Logo</a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/produtos">Produtos</a></li>
+                    <li><a href="/categorias">Categorias</a></li>
+                    <li><a href="/ofertas">Ofertas</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar produtos...">
+                    <button type="submit">Buscar</button>
+                </form>
+
+                <div class="user-actions">
+                    <a href="/carrinho" class="cart-icon">Carrinho</a>
+                    <a href="/minha-conta" class="account-icon">Minha Conta</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Principal (Hero Section) -->
+        <section class="hero-section">
+            <div class="hero-content container">
+                <h1>Descubra as Melhores Ofertas!</h1>
+                <p>Produtos incríveis e tendências que você vai amar.</p>
+                <a href="/produtos" class="btn btn-primary">Compre Agora</a>
+            </div>
+        </section>
+
+        <!-- Seção de Produtos em Destaque -->
+        <section class="featured-products container">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Smartphone" alt="Smartphone X">
+                    <h3>Smartphone X Pro</h3>
+                    <p class="price">R$ 1.999,99</p>
+                    <button class="btn btn-secondary">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Smartwatch" alt="Smartwatch Y">
+                    <h3>Smartwatch Y Fit</h3>
+                    <p class="price">R$ 599,99</p>
+                    <button class="btn btn-secondary">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Fone+Bluetooth" alt="Fone de Ouvido Bluetooth Z">
+                    <h3>Fone de Ouvido Bluetooth Z</h3>
+                    <p class="price">R$ 249,99</p>
+                    <button class="btn btn-secondary">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x250?text=Notebook" alt="Notebook Gamer Alpha">
+                    <h3>Notebook Gamer Alpha</h3>
+                    <p class="price">R$ 4.599,99</p>
+                    <button class="btn btn-secondary">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Categorias Populares -->
+        <section class="popular-categories container">
+            <h2>Categorias Populares</h2>
+            <div class="category-grid">
+                <a href="/categorias/eletronicos" class="category-card">
+                    <img src="https://via.placeholder.com/150x150?text=Eletrônicos" alt="Eletrônicos">
+                    <h3>Eletrônicos</h3>
+                </a>
+                <a href="/categorias/moda" class="category-card">
+                    <img src="https://via.placeholder.com/150x150?text=Moda" alt="Moda">
+                    <h3>Moda</h3>
+                </a>
+                <a href="/categorias/casa" class="category-card">
+                    <img src="https://via.placeholder.com/150x150?text=Casa" alt="Casa e Decoração">
+                    <h3>Casa e Decoração</h3>
+                </a>
+                <a href="/categorias/esportes" class="category-card">
+                    <img src="https://via.placeholder.com/150x150?text=Esportes" alt="Esportes">
+                    <h3>Esportes</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Ofertas Especiais -->
+        <section class="promo-banner container">
+            <div class="promo-content">
+                <h2>Não Perca: Ofertas Relâmpago!</h2>
+                <p>Descontos incríveis por tempo limitado. Garanta já o seu!</p>
+                <a href="/ofertas" class="btn btn-primary">Ver Todas as Ofertas</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container container">
+            <div class="footer-section footer-info">
+                <div class="footer-logo">
+                    <a href="/">E-commerce Logo</a>
+                </div>
+                <p>&copy; 2023 E-commerce. Todos os direitos reservados.</p>
+                <p>Seu destino para as melhores compras online!</p>
+            </div>
+
+            <div class="footer-section footer-nav">
+                <h3>Navegação</h3>
+                <nav aria-label="Links de Rodapé">
+                    <ul>
+                        <li><a href="/sobre">Sobre Nós</a></li>
+                        <li><a href="/privacidade">Política de Privacidade</a></li>
+                        <li><a href="/termos">Termos de Serviço</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-section footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Visite nossa página no Facebook">Facebook</a>
+                    <a href="https://twitter.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Siga-nos no Twitter">Twitter</a>
+                    <a href="https://instagram.com/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Veja nosso perfil no Instagram">Instagram</a>
+                    <a href="https://linkedin.com/company/ecommerce" target="_blank" rel="noopener noreferrer" aria-label="Conecte-se conosco no LinkedIn">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="footer-section footer-newsletter">
+                <h3>Receba Nossas Novidades</h3>
+                <p>Assine nossa newsletter para receber as últimas ofertas e atualizações.</p>
+                <form class="newsletter-form">
+                    <label for="newsletter-email" class="sr-only">Seu e-mail</label>
+                    <input type="email" id="newsletter-email" placeholder="Seu e-mail" aria-label="Seu endereço de e-mail" required>
+                    <button type="submit" class="btn btn-secondary">Assinar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
