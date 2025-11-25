@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .featured-products {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-products">
+            <h2>Produtos em Destaque</h2>
+            <p>Confira nossos produtos mais populares!</p>
+            <!-- Adicione produtos em destaque aqui -->
+        </section>
+
+        <section class="product-grid">
+            <div class="product-card">
+                <h3>Produto 1</h3>
+                <img src="https://via.placeholder.com/150" alt="Produto 1">
+                <p>Descrição do produto 1.</p>
+            </div>
+            <div class="product-card">
+                <h3>Produto 2</h3>
+                <img src="https://via.placeholder.com/150" alt="Produto 2">
+                <p>Descrição do produto 2.</p>
+            </div>
+            <div class="product-card">
+                <h3>Produto 3</h3>
+                <img src="https://via.placeholder.com/150" alt="Produto 3">
+                <p>Descrição do produto 3.</p>
+            </div>
+            <div class="product-card">
+                <h3>Produto 4</h3>
+                <img src="https://via.placeholder.com/150" alt="Produto 4">
+                <p>Descrição do produto 4.</p>
+            </div>
+            <!-- Adicione mais produtos aqui -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Loja Online. Todos os direitos reservados.</p>
+        <p>Contato: contato@lojaonline.com</p>
+    </footer>
+</body>
+</html>
