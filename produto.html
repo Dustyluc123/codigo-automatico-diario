@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .additional-images img {
+            max-width: 100px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="mainImage" src="placeholder-image.jpg" alt="Imagem do Produto" class="product-image">
+                <div class="additional-images mt-3">
+                    <img src="placeholder-image.jpg" alt="Imagem Adicional 1" onclick="changeMainImage('placeholder-image.jpg')">
+                    <img src="placeholder-image.jpg" alt="Imagem Adicional 2" onclick="changeMainImage('placeholder-image.jpg')">
+                    <img src="placeholder-image.jpg" alt="Imagem Adicional 3" onclick="changeMainImage('placeholder-image.jpg')">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 id="productName">Nome do Produto</h1>
+                <p class="lead" id="productPrice">Preço: R$ 99,99</p>
+                <p id="productDescription">Descrição completa do produto.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                <div class="form-group">
+                    <label for="size">Tamanho:</label>
+                    <select class="form-control" id="size">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Cor:</label>
+                    <select class="form-control" id="color">
+                        <option>Vermelho</option>
+                        <option>Azul</option>
+                        <option>Verde</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary" onclick="addToCart()">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function changeMainImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+
+        function addToCart() {
+            // Implemente a lógica para adicionar ao carrinho aqui.
+            // Pode envolver o envio de dados para o servidor ou atualização do localStorage.
+            alert('Produto adicionado ao carrinho!');
+        }
+
+        // Função para popular dinamicamente com dados (simulação)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Substitua os placeholders com dados reais do produto
+            document.getElementById('productName').innerText = 'Camiseta Algodão Premium';
+            document.getElementById('productPrice').innerText = 'Preço: R$ 79,90';
+            document.getElementById('productDescription').innerText = 'Confortável camiseta feita com 100% algodão premium. Ideal para o dia a dia.';
+            // Lógica para carregar as imagens dinamicamente aqui...
+        });
+    </script>
+
+</body>
+</html>
