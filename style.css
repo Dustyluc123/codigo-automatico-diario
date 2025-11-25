@@ -1,0 +1,178 @@
+/* Reset CSS Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variáveis de Cores */
+:root {
+  --primary-color: #3498db; /* Azul */
+  --secondary-color: #e74c3c; /* Vermelho */
+  --background-color: #f4f4f4; /* Cinza claro */
+  --text-color: #333;
+  --light-text-color: #fff;
+  --border-color: #ddd;
+}
+
+/* Estilos Globais */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Barra de Navegação */
+nav {
+  background-color: #2980b9; /* Um tom mais escuro de azul */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--light-text-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0db4f; /* Amarelo */
+}
+
+/* Grade de Produtos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-item {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-item img {
+  margin-bottom: 10px;
+}
+
+.product-item h3 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.product-item p {
+  margin-bottom: 10px;
+}
+
+.product-item .price {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: var(--light-text-color);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 768px (smartphones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduz o padding do container */
+  }
+
+  header h1 {
+    font-size: 1.5em; /* Reduz o tamanho da fonte do título */
+  }
+
+  nav ul {
+    flex-direction: column; /* Coloca os itens da navegação em coluna */
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0; /* Aumenta a margem entre os itens da navegação */
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Coloca os produtos em uma única coluna */
+  }
+
+  .product-item {
+    padding: 10px; /* Reduz o padding dos itens de produto */
+  }
+
+  .product-item h3 {
+    font-size: 1em; /* Reduz o tamanho da fonte do título do produto */
+  }
+
+  .product-item p {
+    font-size: 0.9em; /* Reduz o tamanho da fonte da descrição do produto */
+  }
+}
+
+/* Para telas entre 769px e 992px (tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    padding: 15px; /* Ajusta o padding do container */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* Coloca os produtos em duas colunas */
+  }
+
+  .product-item h3 {
+    font-size: 1.1em; /* Ajusta o tamanho da fonte do título do produto */
+  }
+}
